@@ -107,84 +107,84 @@ end,})
 
 -----
 
-local Label = page10.Label({Title = "SUPERHUMAN"})
+local Label = page9.Label({Title = "SUPERHUMAN"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "BUY",Callback = function()
+page9.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page10.Label({Title = "SHARKMANKARATE"})
+local Label = page9.Label({Title = "SHARKMANKARATE"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "BUY",Callback = function()
+page9.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "DEATHSTEP"})
+local Label = page9.Label({Title = "DEATHSTEP"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "BUY",Callback = function()
+page9.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "Electric Claw"})
+local Label = page9.Label({Title = "Electric Claw"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "BUY",Callback = function()
+page9.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "DARGONTALON"})
+local Label = page9.Label({Title = "DARGONTALON"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "BUY",Callback = function()
+page9.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "GODHUMAN"})
+local Label = page9.Label({Title = "GODHUMAN"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "BUY",Callback = function()
+page9.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "Sanguine-Art"})
+local Label = page9.Label({Title = "Sanguine-Art"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "BUY",Callback = function()
+page9.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "RANDOM-FRUITE"})
+local Label = page11.Label({Title = "RANDOM-FRUITE"})
 --Label.SetValue().Text = "Test"
 
 page12.Button({Title = "RANDOM",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "RESET-STATS"})
+local Label = page12.Label({Title = "RESET-STATS"})
 --Label.SetValue().Text = "Test"
 
 page13.Button({Title = "RESET",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "RESET-RACE"})
+local Label = page13.Label({Title = "RESET-RACE"})
 --Label.SetValue().Text = "Test"
 
 page14.Button({Title = "RESET",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "CYBORG"})
+local Label = page14.Label({Title = "CYBORG"})
 --Label.SetValue().Text = "Test"
 
 page15.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page1.Label({Title = "GHOUI"})
+local Label = page14.Label({Title = "GHOUI"})
 --Label.SetValue().Text = "Test"
 page15.Button({Title = "BUY",Callback = function()
 	print("button")
