@@ -159,7 +159,7 @@ end,})
 local Label = page11.Label({Title = "RANDOM-FRUITE"})
 --Label.SetValue().Text = "Test"
 
-page12.Button({Title = "RANDOM",Callback = function()
+page11.Button({Title = "RANDOM",Callback = function()
 	print("button")
 end,})
 
@@ -173,19 +173,19 @@ end,})
 local Label = page13.Label({Title = "RESET-RACE"})
 --Label.SetValue().Text = "Test"
 
-page14.Button({Title = "RESET",Callback = function()
+page13.Button({Title = "RESET",Callback = function()
 	print("button")
 end,})
 
 local Label = page14.Label({Title = "CYBORG"})
 --Label.SetValue().Text = "Test"
 
-page15.Button({Title = "BUY",Callback = function()
+page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
 local Label = page14.Label({Title = "GHOUI"})
 --Label.SetValue().Text = "Test"
-page15.Button({Title = "BUY",Callback = function()
+page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
