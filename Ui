@@ -57,7 +57,7 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page1.Toggle({Title = "DARK-SCREEN",Default = false,Callback = function(value)
-    loadstring(game:HttpGet("https://github.com/Fame5286/dark-sreen/blob/main/Dark-Screen"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fame5286/dark-sreen/refs/heads/main/Dark-Screen"))()
 end,})
 -- toggle.SetValue(false)
 
