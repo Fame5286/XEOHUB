@@ -8,8 +8,8 @@ local tab4 = main.tab({Title = "MATERIAL"})
 local tab5 = main.tab({Title = "SHOP"})
 local tab6 = main.tab({Title = "RAIDS"})
 local tab7 = main.tab({Title = "TELEPORT"})
-local tab8 = main.tab({Title = "SETTING"})
 
+-----
 
 local page1 = tab.page({Title = "SETTING-FRAM⚙️",Side = 2})
 local page2 = tab.page({Title = "LEVEL🔥",Side = 1})
@@ -19,17 +19,16 @@ local page5 = tab2.page({Title = "STATS🌟",Side = 1})
 local page6 = tab3.page({Title = "SWORD⚔️",Side = 1})
 local page7 = tab3.page({Title = "GUN🔫",Side = 2})
 local page8 = tab4.page({Title = "METERILA🎃",Side = 1})
-local page9 = tab4.page({Title = "SEA-EVEN🌊",Side = 2})
-local page10 = tab5.page({Title = "MELEE👊",Side = 1})
-local page11 = tab5.page({Title = "SWORD⚔️",Side = 1})
-local page12 = tab5.page({Title = "FRUITS🍇",Side = 1})
-local page13 = tab5.page({Title = "RESET-STATS🔄",Side = 2})
-local page14 = tab5.page({Title = "RESET-RACE🔄",Side = 2})
-local page15 = tab5.page({Title = "RACE👾",Side = 2})
-local page16 = tab6.page({Title = "RAIDS🗻",Side = 1})
-local page17 = tab7.page({Title = "TELEPORT⏩",Side = 1})
-local page18 = tab8.page({Title = "SETTING⚙️",Side = 1})
+local page9 = tab5.page({Title = "MELEE👊",Side = 1})
+local page10 = tab5.page({Title = "SWORD⚔️",Side = 1})
+local page11 = tab5.page({Title = "FRUITS🍇",Side = 1})
+local page12 = tab5.page({Title = "RESET-STATS🔄",Side = 2})
+local page13 = tab5.page({Title = "RESET-RACE🔄",Side = 2})
+local page14 = tab5.page({Title = "RACE👾",Side = 2})
+local page15 = tab6.page({Title = "RAIDS🗻",Side = 1})
+local page16 = tab7.page({Title = "TELEPORT⏩",Side = 1})
 
+-----
 
 local toggle = page1.Toggle({Title = "AUTO-EQUIP",Default = false,Callback = function(value)
     print(value)
@@ -57,11 +56,41 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page1.Toggle({Title = "DARK-SCREEN",Default = false,Callback = function(value)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fame5286/dark-sreen/refs/heads/main/Dark-Screen"))()
+    loadstring(game:HttpGet("https://github.com/Fame5286/dark-sreen/blob/main/Dark-Screen"))()
 end,})
 -- toggle.SetValue(false)
 
 local toggle = page2.Toggle({Title = "AUTO-FRAM LEVEL",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page3.Toggle({Title = "AUTO-SUPERHUMAN",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page3.Toggle({Title = "AUTO-SHARKMANKARATE",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page3.Toggle({Title = "AUTO-DEATHSTEP",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page3.Toggle({Title = "AUTO-Electric Claw",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page3.Toggle({Title = "AUTO-DARGONTALON",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page3.Toggle({Title = "AUTO-GODHUMAN",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
@@ -76,3 +105,87 @@ local toggle = page4.Toggle({Title = "AUTO-KATAKULI V2",Default = false,Callback
 end,})
 -- toggle.SetValue(false)
 
+-----
+
+local Label = page10.Label({Title = "SUPERHUMAN"})
+--Label.SetValue().Text = "Test"
+
+page10.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page10.Label({Title = "SHARKMANKARATE"})
+--Label.SetValue().Text = "Test"
+
+page10.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "DEATHSTEP"})
+--Label.SetValue().Text = "Test"
+
+page10.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "Electric Claw"})
+--Label.SetValue().Text = "Test"
+
+page10.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "DARGONTALON"})
+--Label.SetValue().Text = "Test"
+
+page10.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "GODHUMAN"})
+--Label.SetValue().Text = "Test"
+
+page10.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "Sanguine-Art"})
+--Label.SetValue().Text = "Test"
+
+page10.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "RANDOM-FRUITE"})
+--Label.SetValue().Text = "Test"
+
+page12.Button({Title = "RANDOM",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "RESET-STATS"})
+--Label.SetValue().Text = "Test"
+
+page13.Button({Title = "RESET",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "RESET-RACE"})
+--Label.SetValue().Text = "Test"
+
+page14.Button({Title = "RESET",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "CYBORG"})
+--Label.SetValue().Text = "Test"
+
+page15.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local Label = page1.Label({Title = "GHOUI"})
+--Label.SetValue().Text = "Test"
+page15.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
