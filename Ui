@@ -26,9 +26,11 @@ local page12 = tab5.page({Title = "RESET-STATS🔄",Side = 2})
 local page13 = tab5.page({Title = "RANDOM-RACE🔄",Side = 2})
 local page14 = tab5.page({Title = "RACE👾",Side = 2})
 local page15 = tab6.page({Title = "RAIDS🗻",Side = 1})
-local page16 = tab7.page({Title = "TELEPORT⏩",Side = 1})
+local page16 = tab7.page({Title = "TELEPORT🏝️",Side = 1})
+local page17 = tab7.page({Title = "SEA🌊",Side = 2})
 
------
+
+-----TAB1----SETTING
 
 local toggle = page1.Toggle({Title = "AUTO-EQUIP",Default = false,Callback = function(value)
     print(value)
@@ -49,6 +51,8 @@ local toggle = page1.Toggle({Title = "DARK-SCREEN",Default = false,Callback = fu
     loadstring(game:HttpGet("https://github.com/Fame5286/dark-sreen/blob/main/Dark-Screen"))()
 end,})
 -- toggle.SetValue(false)
+
+----MELEE
 
 local toggle = page1.Toggle({Title = "AUTOOPEN-RACE V3",Default = false,Callback = function(value)
     print(value)
@@ -95,6 +99,8 @@ local toggle = page3.Toggle({Title = "AUTO-GODHUMAN",Default = false,Callback = 
 end,})
 -- toggle.SetValue(false)
 
+-----BOSS
+
 local toggle = page4.Toggle({Title = "AUTO-KATAKULI V1",Default = false,Callback = function(value)
     print(value)
 end,})
@@ -105,7 +111,154 @@ local toggle = page4.Toggle({Title = "AUTO-KATAKULI V2",Default = false,Callback
 end,})
 -- toggle.SetValue(false)
 
------
+----TAB2----STATS
+
+local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+-----TAB3----SWORD
+
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+-----GUN
+
+local toggle = page7.Toggle({Title = "AUTO-GUN",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page7.Toggle({Title = "AUTO-GUN",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page7.Toggle({Title = "AUTO-GUN",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+----ACCESSORIES
+
+local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+-----TAB4----METERILA
+
+page9.Button({Title = "AUTO-BONE",Callback = function()
+	print("button")
+end,})
+
+page9.Button({Title = "AUTO-MAGMAORE",Callback = function()
+	print("button")
+end,})
+
+page9.Button({Title = "AUTO-ECTOPLASM",Callback = function()
+	print("button")
+end,})
+
+page9.Button({Title = "AUTO-FISHTAIL",Callback = function()
+	print("button")
+end,})
+
+page9.Button({Title = "AUTO-MYSTICDROPLET",Callback = function()
+	print("button")
+end,})
+
+page9.Button({Title = "AUTO-VAMPIREFANG",Callback = function()
+	print("button")
+end,})
+
+page9.Button({Title = "AUTO-MINITUSK",Callback = function()
+	print("button")
+end,})
+
+-----TAB5----MELEE
 
 local Label = page10.Label({Title = "SUPERHUMAN"})
 --Label.SetValue().Text = "Test"
@@ -156,6 +309,8 @@ page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
+-----OTHER
+
 local Label = page11.Label({Title = "RANDOM-FRUITE"})
 --Label.SetValue().Text = "Test"
 
@@ -191,6 +346,8 @@ page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
+-----TAB6----RAIDS
+
 local dropdown = page15.Dropdown({Title = "SELECT",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
 	print(value)
 end,})
@@ -211,3 +368,37 @@ local toggle = page15.Toggle({Title = "KILL-AURA",Default = false,Callback = fun
     print(value)
 end,})
 -- toggle.SetValue(false)
+
+-----TAB7----TP
+
+local dropdown = page16.Dropdown({Title = "SELECT-ISLAND",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
+	print(value)
+end,})
+-- dropdown.Add(value)
+-- dropdown.Clear()
+
+local toggle = page16.Toggle({Title = "TELEPORT",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local Label = page17.Label({Title = "TELEPORT TO SEA3"})
+--Label.SetValue().Text = "Test"
+
+page17.Button({Title = "TELEPORT",Callback = function()
+	print("button")
+end,})
+
+local Label = page17.Label({Title = "TELEPORT TO SEA2"})
+--Label.SetValue().Text = "Test"
+
+page17.Button({Title = "TELEPORT",Callback = function()
+	print("button")
+end,})
+
+local Label = page17.Label({Title = "TELEPORT TO SEA1"})
+--Label.SetValue().Text = "Test"
+
+page17.Button({Title = "TELEPORT",Callback = function()
+	print("button")
+end,})
