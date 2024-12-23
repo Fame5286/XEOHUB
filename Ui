@@ -18,14 +18,15 @@ local page4 = tab.page({Title = "BOSS🎭",Side = 1})
 local page5 = tab2.page({Title = "STATS🌟",Side = 1})
 local page6 = tab3.page({Title = "SWORD⚔️",Side = 1})
 local page7 = tab3.page({Title = "GUN🔫",Side = 2})
-local page8 = tab4.page({Title = "METERILA🎃",Side = 1})
-local page9 = tab5.page({Title = "MELEE👊",Side = 1})
-local page10 = tab5.page({Title = "FRUITS🍇",Side = 1})
-local page11 = tab5.page({Title = "RESET-STATS🔄",Side = 2})
-local page12 = tab5.page({Title = "RANDOM-RACE🔄",Side = 2})
-local page13 = tab5.page({Title = "RACE👾",Side = 2})
-local page14 = tab6.page({Title = "RAIDS🗻",Side = 1})
-local page15 = tab7.page({Title = "TELEPORT⏩",Side = 1})
+local page8 = tab3.page({Title = "ACCESSORIES👑",Side = 1})
+local page9 = tab4.page({Title = "METERILA🎃",Side = 1})
+local page10 = tab5.page({Title = "MELEE👊",Side = 1})
+local page11 = tab5.page({Title = "FRUITS🍇",Side = 1})
+local page12 = tab5.page({Title = "RESET-STATS🔄",Side = 2})
+local page13 = tab5.page({Title = "RANDOM-RACE🔄",Side = 2})
+local page14 = tab5.page({Title = "RACE👾",Side = 2})
+local page15 = tab6.page({Title = "RAIDS🗻",Side = 1})
+local page16 = tab7.page({Title = "TELEPORT⏩",Side = 1})
 
 -----
 
@@ -199,6 +200,23 @@ end,})
 local Label = page14.Label({Title = "BUY-CHIP"})
 --Label.SetValue().Text = "Test"
 
-page14.Button({Title = "BUY",Callback = function()
-	print("button")
+local toggle = page14.Toggle({Title = "BUY",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
+
+local Label = page14.Label({Title = "START-RAIDS"})
+--Label.SetValue().Text = "Test"
+
+local toggle = page14.Toggle({Title = "START",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local Label = page14.Label({Title = "KILL-AURA"})
+--Label.SetValue().Text = "Test"
+
+local toggle = page14.Toggle({Title = "OPEN",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
