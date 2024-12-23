@@ -508,12 +508,12 @@ local toggle = page18.Toggle({Title = "TELEPORT TO FRUITE",Default = false,Callb
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page16.Toggle({Title = "HOP SERVER",Default = false,Callback = function(value)
+local toggle = page18.Toggle({Title = "HOP SERVER",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page16.Toggle({Title = "REJOIN",Default = false,Callback = function(value)
+local toggle = page18.Toggle({Title = "REJOIN",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
