@@ -29,7 +29,7 @@ local page14 = tab5.page({Title = "RACE👾",Side = 2})
 local page15 = tab6.page({Title = "RAIDS🗻",Side = 1})
 local page16 = tab7.page({Title = "TELEPORT🏝️",Side = 1})
 local page17 = tab7.page({Title = "SEA🌊",Side = 2})
-local page18 = tab6.page({Title = "OTHER➕",Side = 1})
+local page18 = tab8.page({Title = "OTHER➕",Side = 1})
 
 
 -----TAB1----SETTING
@@ -132,7 +132,7 @@ end,})
 
 ----TAB2----STATS
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 5000,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -142,7 +142,7 @@ local toggle = page5.Toggle({Title = "UP-MELEE",Default = false,Callback = funct
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 5000,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -152,7 +152,7 @@ local toggle = page5.Toggle({Title = "UP-DEFENSE",Default = false,Callback = fun
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -162,7 +162,7 @@ local toggle = page5.Toggle({Title = "UP-SWORD",Default = false,Callback = funct
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -172,7 +172,7 @@ local toggle = page5.Toggle({Title = "UP-GUN",Default = false,Callback = functio
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
