@@ -22,7 +22,7 @@ local page8 = tab4.page({Title = "METERILA🎃",Side = 1})
 local page9 = tab5.page({Title = "MELEE👊",Side = 1})
 local page10 = tab5.page({Title = "FRUITS🍇",Side = 1})
 local page11 = tab5.page({Title = "RESET-STATS🔄",Side = 2})
-local page12 = tab5.page({Title = "RESET-RACE🔄",Side = 2})
+local page12 = tab5.page({Title = "RANDOM-RACE🔄",Side = 2})
 local page13 = tab5.page({Title = "RACE👾",Side = 2})
 local page14 = tab6.page({Title = "RAIDS🗻",Side = 1})
 local page15 = tab7.page({Title = "TELEPORT⏩",Side = 1})
@@ -44,6 +44,11 @@ local toggle = page1.Toggle({Title = "FPS-BOOSTER",Default = false,Callback = fu
 end,})
 -- toggle.SetValue(false)
 
+local toggle = page1.Toggle({Title = "DARK-SCREEN",Default = false,Callback = function(value)
+    loadstring(game:HttpGet("https://github.com/Fame5286/dark-sreen/blob/main/Dark-Screen"))()
+end,})
+-- toggle.SetValue(false)
+
 local toggle = page1.Toggle({Title = "AUTOOPEN-RACE V3",Default = false,Callback = function(value)
     print(value)
 end,})
@@ -51,11 +56,6 @@ end,})
 
 local toggle = page1.Toggle({Title = "AUTOOPEN-RACE V4",Default = false,Callback = function(value)
     print(value)
-end,})
--- toggle.SetValue(false)
-
-local toggle = page1.Toggle({Title = "DARK-SCREEN",Default = false,Callback = function(value)
-    loadstring(game:HttpGet("https://github.com/Fame5286/dark-sreen/blob/main/Dark-Screen"))()
 end,})
 -- toggle.SetValue(false)
 
@@ -169,10 +169,10 @@ page11.Button({Title = "RESET",Callback = function()
 	print("button")
 end,})
 
-local Label = page12.Label({Title = "RESET-RACE"})
+local Label = page12.Label({Title = "RANDOM-RACE"})
 --Label.SetValue().Text = "Test"
 
-page12.Button({Title = "RESET",Callback = function()
+page12.Button({Title = "RANDOM",Callback = function()
 	print("button")
 end,})
 
@@ -187,5 +187,18 @@ local Label = page13.Label({Title = "GHOUI"})
 --Label.SetValue().Text = "Test"
 
 page13.Button({Title = "BUY",Callback = function()
+	print("button")
+end,})
+
+local dropdown = page14.Dropdown({Title = "SELECT-CHIP",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
+	print(value)
+end,})
+-- dropdown.Add(value)
+-- dropdown.Clear()
+
+local Label = page14.Label({Title = "BUY-CHIP"})
+--Label.SetValue().Text = "Test"
+
+page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
