@@ -132,7 +132,7 @@ end,})
 
 ----TAB2----STATS
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 5000,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -142,7 +142,7 @@ local toggle = page5.Toggle({Title = "UP-MELEE",Default = false,Callback = funct
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 5000,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
