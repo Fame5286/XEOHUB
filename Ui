@@ -224,37 +224,43 @@ end,})
 
 ----ACCESSORIES
 
-local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+local Label = page8.Label({Title = "ACCESSORIES SEAL3"})
+--Label.SetValue().Text = "Test"
+
+local toggle = page8.Toggle({Title = "AUTO-VALKYRIE HELM",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+local toggle = page8.Toggle({Title = "AUTO-PALE SCARF",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+local toggle = page8.Toggle({Title = "AUTO-HOLY CROWN",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+local toggle = page8.Toggle({Title = "AUTO-MUSKETEER HAT",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+local Label = page8.Label({Title = "ACCESSORIES SEA2"})
+--Label.SetValue().Text = "Test"
+
+local toggle = page8.Toggle({Title = "AUTO-DARK COAT",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+local toggle = page8.Toggle({Title = "AUTO-SWAN GLASSES",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page8.Toggle({Title = "AUTO-ACCESSORIES",Default = false,Callback = function(value)
+local toggle = page8.Toggle({Title = "AUTO-ZEBRA CAP",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
