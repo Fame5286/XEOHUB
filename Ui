@@ -54,12 +54,12 @@ end,})
 
 ----MELEE
 
-local toggle = page1.Toggle({Title = "AUTOOPEN-RACE V3",Default = false,Callback = function(value)
+local toggle = page1.Toggle({Title = "AUTO OPEN-RACE V3",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page1.Toggle({Title = "AUTOOPEN-RACE V4",Default = false,Callback = function(value)
+local toggle = page1.Toggle({Title = "AUTO OPEN-RACE V4",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
@@ -135,58 +135,89 @@ end,})
 
 -----TAB3----SWORD
 
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+local toggle = page6.Toggle({Title = "AUTO-TRUE TRIPLE KATANA",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+local toggle = page6.Toggle({Title = "AUTO-CURSED DUAL KATANA",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
-    print(value)
-end,})
--- toggle.SetValue(false)
-
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+local toggle = page6.Toggle({Title = "AUTO-HALLOW SCYTHE",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+local toggle = page6.Toggle({Title = "AUTO-YAMA",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+local toggle = page6.Toggle({Title = "AUTO-TUSHITA",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+local toggle = page6.Toggle({Title = "AUTO-SPIKEY TRIDENT",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page6.Toggle({Title = "AUTO-SWORD",Default = false,Callback = function(value)
+local toggle = page6.Toggle({Title = "AUTO-SHIZU",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-SAISHI",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-OROSHI",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-RENGOKU",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-POLE (1ST FORM)",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-MIDNIGHT BLADE",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-KOKO",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-DARK DAGGER",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-BUDDY SWORD",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page6.Toggle({Title = "AUTO-CANVANDER",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
 
 -----GUN
 
-local toggle = page7.Toggle({Title = "AUTO-GUN",Default = false,Callback = function(value)
-    print(value)
-end,})
--- toggle.SetValue(false)
-
-local toggle = page7.Toggle({Title = "AUTO-GUN",Default = false,Callback = function(value)
-    print(value)
-end,})
--- toggle.SetValue(false)
-
-local toggle = page7.Toggle({Title = "AUTO-GUN",Default = false,Callback = function(value)
+local toggle = page7.Toggle({Title = "AUTO-KABUCHA",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
@@ -230,33 +261,40 @@ end,})
 
 -----TAB4----METERILA
 
-page9.Button({Title = "AUTO-BONE",Callback = function()
-	print("button")
+local toggle = page9.Toggle({Title = "AUTO-BONE",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
 
-page9.Button({Title = "AUTO-MAGMAORE",Callback = function()
-	print("button")
+local toggle = page9.Toggle({Title = "AUTO-MAGMAORE",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
 
-page9.Button({Title = "AUTO-ECTOPLASM",Callback = function()
-	print("button")
+local toggle = page9.Toggle({Title = "AUTO-ECTOPLASM",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
 
-page9.Button({Title = "AUTO-FISHTAIL",Callback = function()
-	print("button")
+local toggle = page9.Toggle({Title = "AUTO-FISHTAIL",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
 
-page9.Button({Title = "AUTO-MYSTICDROPLET",Callback = function()
-	print("button")
+local toggle = page9.Toggle({Title = "AUTO-MYSTICDROPLET",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
 
-page9.Button({Title = "AUTO-VAMPIREFANG",Callback = function()
-	print("button")
+local toggle = page9.Toggle({Title = "AUTO-VAMPIREFANG",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
 
-page9.Button({Title = "AUTO-MINITUSK",Callback = function()
-	print("button")
+local toggle = page9.Toggle({Title = "AUTO-MINITUSK",Default = false,Callback = function(value)
+    print(value)
 end,})
+-- toggle.SetValue(false)
 
 -----TAB5----MELEE
 
