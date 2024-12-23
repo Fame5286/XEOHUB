@@ -80,7 +80,7 @@ local toggle = page3.Toggle({Title = "AUTO-DEATHSTEP",Default = false,Callback =
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page3.Toggle({Title = "AUTO-Electric Claw",Default = false,Callback = function(value)
+local toggle = page3.Toggle({Title = "AUTO-ELECTRIC-CLAW",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
@@ -107,116 +107,107 @@ end,})
 
 -----
 
-local Label = page9.Label({Title = "SUPERHUMAN"})
+local Label = page10.Label({Title = "SUPERHUMAN"})
 --Label.SetValue().Text = "Test"
 
-page9.Button({Title = "BUY",Callback = function()
+page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page9.Label({Title = "SHARKMANKARATE"})
+local Label = page10.Label({Title = "SHARKMANKARATE"})
 --Label.SetValue().Text = "Test"
 
-page9.Button({Title = "BUY",Callback = function()
+page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page9.Label({Title = "DEATHSTEP"})
+local Label = page10.Label({Title = "DEATHSTEP"})
 --Label.SetValue().Text = "Test"
 
-page9.Button({Title = "BUY",Callback = function()
+page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page9.Label({Title = "Electric Claw"})
+local Label = page10.Label({Title = "ELECTRIC-CLAW"})
 --Label.SetValue().Text = "Test"
 
-page9.Button({Title = "BUY",Callback = function()
+page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page9.Label({Title = "DARGONTALON"})
+local Label = page10.Label({Title = "DARGONTALON"})
 --Label.SetValue().Text = "Test"
 
-page9.Button({Title = "BUY",Callback = function()
+page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page9.Label({Title = "GODHUMAN"})
+local Label = page10.Label({Title = "GODHUMAN"})
 --Label.SetValue().Text = "Test"
 
-page9.Button({Title = "BUY",Callback = function()
+page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page9.Label({Title = "Sanguine-Art"})
+local Label = page10.Label({Title = "SANGUINE-ART"})
 --Label.SetValue().Text = "Test"
 
-page9.Button({Title = "BUY",Callback = function()
+page10.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page10.Label({Title = "RANDOM-FRUITE"})
+local Label = page11.Label({Title = "RANDOM-FRUITE"})
 --Label.SetValue().Text = "Test"
 
-page10.Button({Title = "RANDOM",Callback = function()
+page11.Button({Title = "RANDOM",Callback = function()
 	print("button")
 end,})
 
-local Label = page11.Label({Title = "RESET-STATS"})
+local Label = page12.Label({Title = "RESET-STATS"})
 --Label.SetValue().Text = "Test"
 
-page11.Button({Title = "RESET",Callback = function()
+page12.Button({Title = "RESET",Callback = function()
 	print("button")
 end,})
 
-local Label = page12.Label({Title = "RANDOM-RACE"})
+local Label = page13.Label({Title = "RANDOM-RACE"})
 --Label.SetValue().Text = "Test"
 
-page12.Button({Title = "RANDOM",Callback = function()
+page13.Button({Title = "RANDOM",Callback = function()
 	print("button")
 end,})
 
-local Label = page13.Label({Title = "CYBORG"})
+local Label = page14.Label({Title = "CYBORG"})
 --Label.SetValue().Text = "Test"
 
-page13.Button({Title = "BUY",Callback = function()
+page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page13.Label({Title = "GHOUI"})
+local Label = page14.Label({Title = "GHOUI"})
 --Label.SetValue().Text = "Test"
 
-page13.Button({Title = "BUY",Callback = function()
+page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local dropdown = page14.Dropdown({Title = "SELECT-CHIP",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
+local dropdown = page15.Dropdown({Title = "SELECT",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
 	print(value)
 end,})
 -- dropdown.Add(value)
 -- dropdown.Clear()
 
-local Label = page14.Label({Title = "BUY-CHIP"})
---Label.SetValue().Text = "Test"
-
-local toggle = page14.Toggle({Title = "BUY",Default = false,Callback = function(value)
+local toggle = page15.Toggle({Title = "BUY-CHIP",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local Label = page14.Label({Title = "START-RAIDS"})
---Label.SetValue().Text = "Test"
-
-local toggle = page14.Toggle({Title = "START",Default = false,Callback = function(value)
+local toggle = page15.Toggle({Title = "START-RAIDS",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local Label = page14.Label({Title = "KILL-AURA"})
---Label.SetValue().Text = "Test"
-
-local toggle = page14.Toggle({Title = "OPEN",Default = false,Callback = function(value)
+local toggle = page15.Toggle({Title = "KILL-AURA",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
