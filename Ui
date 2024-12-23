@@ -8,6 +8,7 @@ local tab4 = main.tab({Title = "MATERIAL"})
 local tab5 = main.tab({Title = "SHOP"})
 local tab6 = main.tab({Title = "RAIDS"})
 local tab7 = main.tab({Title = "TELEPORT"})
+local tab8 = main.tab({Title = "OTHER"})
 
 -----
 
@@ -28,6 +29,7 @@ local page14 = tab5.page({Title = "RACE👾",Side = 2})
 local page15 = tab6.page({Title = "RAIDS🗻",Side = 1})
 local page16 = tab7.page({Title = "TELEPORT🏝️",Side = 1})
 local page17 = tab7.page({Title = "SEA🌊",Side = 2})
+local page18 = tab6.page({Title = "OTHER➕",Side = 1})
 
 
 -----TAB1----SETTING
@@ -48,7 +50,24 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page1.Toggle({Title = "DARK-SCREEN",Default = false,Callback = function(value)
-    loadstring(game:HttpGet("https://github.com/Fame5286/dark-sreen/blob/main/Dark-Screen"))()
+    local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.694346309, 0, -0.293398231, 0)
+Frame.Size = UDim2.new(2.18968058, 0, 2.13707471, 0)
+Frame.ZIndex = -1
+
+UIAspectRatioConstraint.Parent = Frame
+UIAspectRatioConstraint.AspectRatio = 2.127
 end,})
 -- toggle.SetValue(false)
 
@@ -101,34 +120,64 @@ end,})
 
 -----BOSS
 
-local toggle = page4.Toggle({Title = "AUTO-KATAKULI V1",Default = false,Callback = function(value)
+local toggle = page4.Toggle({Title = "AUTO-ELITE HUNTER",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page4.Toggle({Title = "AUTO-KATAKULI V2",Default = false,Callback = function(value)
+local toggle = page4.Toggle({Title = "AUTO-KATAKULI V1",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
 ----TAB2----STATS
 
-local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+	print(value)
+end,})
+-- Slider.SetValue(20)
+
+local toggle = page5.Toggle({Title = "UP-MELEE",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+	print(value)
+end,})
+-- Slider.SetValue(20)
+
+local toggle = page5.Toggle({Title = "UP-DEFENSE",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+	print(value)
+end,})
+-- Slider.SetValue(20)
+
+local toggle = page5.Toggle({Title = "UP-SWORD",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page5.Toggle({Title = "AUTO-STATS",Default = false,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+	print(value)
+end,})
+-- Slider.SetValue(20)
+
+local toggle = page5.Toggle({Title = "UP-GUN",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+	print(value)
+end,})
+-- Slider.SetValue(20)
+
+local toggle = page5.Toggle({Title = "UP-BLOXFRUITE",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
@@ -408,6 +457,11 @@ local toggle = page15.Toggle({Title = "START-RAIDS",Default = false,Callback = f
 end,})
 -- toggle.SetValue(false)
 
+local toggle = page15.Toggle({Title = "AWAKENING",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
 local toggle = page15.Toggle({Title = "KILL-AURA",Default = false,Callback = function(value)
     print(value)
 end,})
@@ -446,3 +500,20 @@ local Label = page17.Label({Title = "TELEPORT TO SEA1"})
 page17.Button({Title = "TELEPORT",Callback = function()
 	print("button")
 end,})
+
+-----TAB8----other
+
+local toggle = page18.Toggle({Title = "TELEPORT TO FRUITE",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page16.Toggle({Title = "HOP SERVER",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page16.Toggle({Title = "REJOIN",Default = false,Callback = function(value)
+    print(value)
+end,})
+-- toggle.SetValue(false)
