@@ -70,7 +70,6 @@ local toggle = page1.Toggle({Title = "AUTO-REDEEM ALL CODE",Default = false,Call
     end)
     wait(1)
     game:GetService("ReplicatedStorage").Assets.GUI.DamageCounter.Enabled = false
-                        end
 end,})
 -- toggle.SetValue(false)
 
