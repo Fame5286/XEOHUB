@@ -563,7 +563,7 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page16.Toggle({Title = "KILL-AURA",Default = false,Callback = function(value)
-        _G.KA = Value
+        _G.KA = value
     while _G.KA do wait ()
         pcall(function()
 	            for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
