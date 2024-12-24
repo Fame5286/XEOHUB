@@ -36,40 +36,7 @@ local page19 = tab6.page({Title = "OTHER➕",Side = 1})
 -----TAB1----SETTING
 
 local toggle = page1.Toggle({Title = "AUTO-REDEEM ALL CODE",Default = false,Callback = function(value)
-    -- Redeem
-    redeem = {
-        'Sub2Fer999',
-        'Enyu_is_Pro',
-        'JCWK',
-        'StarcodeHEO',
-        'MagicBUS',
-        'KittGaming',
-        'Sub2CaptainMaui',
-        'Sub2OfficialNoobie',
-        'TheGreatAce',
-        'Sub2NoobMaster123',
-        'Sub2Daigrock',
-        'Axiore',
-        'StrawHatMaine',
-        'TantaiGaming',
-        'Bluxxy',
-        'SUB2GAMERROBOT_EXP1',
-        'GAMER_ROBOT_1M',
-        'SUBGAMERROBOT_RESET',
-        'RESET_5B',
-        'SUB2GAMERROBOT_RESET1',
-        'Sub2UncleKizaru',
-        'ADMIN_TROLL ',
-        'DRAGONABUSE ',
-        'DEVSCOOKING '
-    }
-    spawn(function()
-        for i,v in pairs(redeem) do
-            game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(v)
-        end
-    end)
-    wait(1)
-    game:GetService("ReplicatedStorage").Assets.GUI.DamageCounter.Enabled = false
+   
 end,})
 -- toggle.SetValue(false)
 
@@ -522,8 +489,6 @@ local Label = page15.Label({Title = "BONE"})
 --Label.SetValue().Text = "Test"
 
 local toggle = page15.Toggle({Title = "RANDOM-BONE",Default = false,Callback = function(value)
-    _G.XS = value
-        while _G.XS do wait()
         local args = {
     [1] = "Bones",
     [2] = "Buy",
@@ -532,7 +497,6 @@ local toggle = page15.Toggle({Title = "RANDOM-BONE",Default = false,Callback = f
 }
         
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-    end
 end,})
 -- toggle.SetValue(false)
 
@@ -550,10 +514,8 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page16.Toggle({Title = "START-RAIDS",Default = false,Callback = function(value)
-    _G.AutoBuyRaids = value
         while _G.AutoStart do wait()
         fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
-    end
 end,})
 -- toggle.SetValue(false)
 
@@ -563,14 +525,10 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page16.Toggle({Title = "KILL-AURA",Default = false,Callback = function(value)
-        _G.KA = value
-    while _G.KA do wait ()
-        pcall(function()
 	            for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
                     if v.ClassName == "Model" and v.Humanoid.Health > 0 then
                         v.Humanoid.Health = Die
                         sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
-                end
 end,})
 -- toggle.SetValue(false)
 
