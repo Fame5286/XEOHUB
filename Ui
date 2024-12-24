@@ -36,7 +36,7 @@ local page19 = tab6.page({Title = "OTHER➕",Side = 1})
 -----TAB1----SETTING
 
 local toggle = page1.Toggle({Title = "AUTO-REDEEM ALL CODE",Default = false,Callback = function(value)
-   
+   print(value)
 end,})
 -- toggle.SetValue(false)
 
@@ -514,7 +514,6 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page16.Toggle({Title = "START-RAIDS",Default = false,Callback = function(value)
-        while _G.AutoStart do wait()
         fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
 end,})
 -- toggle.SetValue(false)
