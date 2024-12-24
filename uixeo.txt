@@ -51,7 +51,25 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page1.Toggle({Title = "FPS-BOOSTER",Default = false,Callback = function(value)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fame5286/fps/main/fps"))()
+    for i,v in next, workspace:GetDescendants() do
+    pcall(function()
+        v.Transparency = 1
+    end)
+end
+for i,v in next, getnilinstances() do
+    pcall(function()
+        v.Transparency = 1
+        for i1,v1 in next, v:GetDescendants() do
+            v1.Transparency = 1
+        end
+    end)
+end
+a = workspace
+a.DescendantAdded:Connect(function(v)
+    pcall(function()
+        v.Transparency = 1
+    end)
+end)
 end,})
 -- toggle.SetValue(false)
 
@@ -573,11 +591,11 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page19.Toggle({Title = "HOP SERVER",Default = false,Callback = function(value)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))()
+    
 end,})
 -- toggle.SetValue(false)
 
 local toggle = page19.Toggle({Title = "REJOIN",Default = false,Callback = function(value)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))()
+    
 end,})
 -- toggle.SetValue(false)
