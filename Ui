@@ -571,7 +571,6 @@ local toggle = page16.Toggle({Title = "KILL-AURA",Default = false,Callback = fun
                         v.Humanoid.Health = Die
                         sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
                 end
-            end
 end,})
 -- toggle.SetValue(false)
 
