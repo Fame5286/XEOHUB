@@ -522,7 +522,7 @@ local Label = page15.Label({Title = "BONE"})
 --Label.SetValue().Text = "Test"
 
 local toggle = page15.Toggle({Title = "RANDOM-BONE",Default = false,Callback = function(value)
-    _G.XS = Value
+    _G.XS = value
         while _G.XS do wait()
         local args = {
     [1] = "Bones",
@@ -550,7 +550,7 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page16.Toggle({Title = "START-RAIDS",Default = false,Callback = function(value)
-    _G.AutoBuyRaids = Value
+    _G.AutoBuyRaids = value
         while _G.AutoStart do wait()
         fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
     end
