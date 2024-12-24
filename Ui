@@ -26,13 +26,53 @@ local page11 = tab5.page({Title = "FRUITS🍇",Side = 1})
 local page12 = tab5.page({Title = "RESET-STATS🔄",Side = 2})
 local page13 = tab5.page({Title = "RANDOM-RACE🔄",Side = 2})
 local page14 = tab5.page({Title = "RACE👾",Side = 2})
-local page15 = tab6.page({Title = "RAIDS🗻",Side = 1})
-local page16 = tab7.page({Title = "TELEPORT🏝️",Side = 1})
-local page17 = tab7.page({Title = "SEA🌊",Side = 2})
-local page18 = tab8.page({Title = "OTHER➕",Side = 1})
+local page15 = tab5.page({Title = "BONE🦴",Side = 2})
+local page16 = tab6.page({Title = "RAIDS🗻",Side = 1})
+local page17 = tab7.page({Title = "TELEPORT🏝️",Side = 1})
+local page18 = tab7.page({Title = "SEA🌊",Side = 2})
+local page19 = tab6.page({Title = "OTHER➕",Side = 1})
 
 
 -----TAB1----SETTING
+
+local toggle = page1.Toggle({Title = "AUTO-REDEEM ALL CODE",Default = false,Callback = function(value)
+    -- Redeem
+    redeem = {
+        'Sub2Fer999',
+        'Enyu_is_Pro',
+        'JCWK',
+        'StarcodeHEO',
+        'MagicBUS',
+        'KittGaming',
+        'Sub2CaptainMaui',
+        'Sub2OfficialNoobie',
+        'TheGreatAce',
+        'Sub2NoobMaster123',
+        'Sub2Daigrock',
+        'Axiore',
+        'StrawHatMaine',
+        'TantaiGaming',
+        'Bluxxy',
+        'SUB2GAMERROBOT_EXP1',
+        'GAMER_ROBOT_1M',
+        'SUBGAMERROBOT_RESET',
+        'RESET_5B',
+        'SUB2GAMERROBOT_RESET1',
+        'Sub2UncleKizaru',
+        'ADMIN_TROLL ',
+        'DRAGONABUSE ',
+        'DEVSCOOKING '
+    }
+    spawn(function()
+        for i,v in pairs(redeem) do
+            game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(v)
+        end
+    end)
+    wait(1)
+    game:GetService("ReplicatedStorage").Assets.GUI.DamageCounter.Enabled = false
+                        end
+end,})
+-- toggle.SetValue(false)
 
 local toggle = page1.Toggle({Title = "AUTO-EQUIP",Default = false,Callback = function(value)
     print(value)
@@ -45,7 +85,7 @@ end,})
 -- toggle.SetValue(false)
 
 local toggle = page1.Toggle({Title = "FPS-BOOSTER",Default = false,Callback = function(value)
-    print(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fame5286/fps/main/fps"))()
 end,})
 -- toggle.SetValue(false)
 
@@ -132,7 +172,7 @@ end,})
 
 ----TAB2----STATS
 
-local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -142,7 +182,7 @@ local toggle = page5.Toggle({Title = "UP-MELEE",Default = false,Callback = funct
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -152,7 +192,7 @@ local toggle = page5.Toggle({Title = "UP-DEFENSE",Default = false,Callback = fun
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -162,7 +202,7 @@ local toggle = page5.Toggle({Title = "UP-SWORD",Default = false,Callback = funct
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -172,7 +212,7 @@ local toggle = page5.Toggle({Title = "UP-GUN",Default = false,Callback = functio
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 1,Max = 5000,Default = 1,Callback = function(value)
+local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
@@ -357,49 +397,77 @@ local Label = page10.Label({Title = "SUPERHUMAN"})
 --Label.SetValue().Text = "Test"
 
 page10.Button({Title = "BUY",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BuySuperhuman"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page10.Label({Title = "SHARKMANKARATE"})
 --Label.SetValue().Text = "Test"
 
 page10.Button({Title = "BUY",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BuySharkmanKarate"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page10.Label({Title = "DEATHSTEP"})
 --Label.SetValue().Text = "Test"
 
 page10.Button({Title = "BUY",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BuyDeathStep"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page10.Label({Title = "ELECTRIC-CLAW"})
 --Label.SetValue().Text = "Test"
 
 page10.Button({Title = "BUY",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BuyElectricClaw"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page10.Label({Title = "DARGONTALON"})
 --Label.SetValue().Text = "Test"
 
 page10.Button({Title = "BUY",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BuyDragonTalon"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page10.Label({Title = "GODHUMAN"})
 --Label.SetValue().Text = "Test"
 
 page10.Button({Title = "BUY",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BuyGodhuman"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page10.Label({Title = "SANGUINE-ART"})
 --Label.SetValue().Text = "Test"
 
 page10.Button({Title = "BUY",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BuySanguineArt"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 -----OTHER
@@ -408,21 +476,33 @@ local Label = page11.Label({Title = "RANDOM-FRUITE"})
 --Label.SetValue().Text = "Test"
 
 page11.Button({Title = "RANDOM",Callback = function()
-	print("button")
+	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
 end,})
 
 local Label = page12.Label({Title = "RESET-STATS"})
 --Label.SetValue().Text = "Test"
 
 page12.Button({Title = "RESET",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BlackbeardReward",
+    [2] = "Refund",
+    [3] = "2"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page13.Label({Title = "RANDOM-RACE"})
 --Label.SetValue().Text = "Test"
 
 page13.Button({Title = "RANDOM",Callback = function()
-	print("button")
+	local args = {
+    [1] = "BlackbeardReward",
+    [2] = "Reroll",
+    [3] = "2"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
 end,})
 
 local Label = page14.Label({Title = "CYBORG"})
@@ -439,81 +519,110 @@ page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
+local Label = page15.Label({Title = "BONE"})
+--Label.SetValue().Text = "Test"
+
+local toggle = page15.Toggle({Title = "RANDOM-BONE",Default = false,Callback = function(value)
+    _G.XS = Value
+        while _G.XS do wait()
+        local args = {
+    [1] = "Bones",
+    [2] = "Buy",
+    [3] = 1,
+    [4] = 1
+}
+        
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+    end
+end,})
+-- toggle.SetValue(false)
+
 -----TAB6----RAIDS
 
-local dropdown = page15.Dropdown({Title = "SELECT",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
+local dropdown = page16.Dropdown({Title = "SELECT",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
 	print(value)
 end,})
 -- dropdown.Add(value)
 -- dropdown.Clear()
 
-local toggle = page15.Toggle({Title = "BUY-CHIP",Default = false,Callback = function(value)
+local toggle = page16.Toggle({Title = "BUY-CHIP",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page15.Toggle({Title = "START-RAIDS",Default = false,Callback = function(value)
+local toggle = page16.Toggle({Title = "START-RAIDS",Default = false,Callback = function(value)
+    _G.AutoBuyRaids = Value
+        while _G.AutoStart do wait()
+        fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
+    end
+end,})
+-- toggle.SetValue(false)
+
+local toggle = page16.Toggle({Title = "AWAKENING",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page15.Toggle({Title = "AWAKENING",Default = false,Callback = function(value)
-    print(value)
-end,})
--- toggle.SetValue(false)
-
-local toggle = page15.Toggle({Title = "KILL-AURA",Default = false,Callback = function(value)
-    print(value)
+local toggle = page16.Toggle({Title = "KILL-AURA",Default = false,Callback = function(value)
+        _G.KA = Value
+    while _G.KA do wait ()
+        pcall(function()
+	            for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
+                    if v.ClassName == "Model" and v.Humanoid.Health > 0 then
+                        v.Humanoid.Health = Die
+                        sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius",  math.huge)
+                end
+            end
 end,})
 -- toggle.SetValue(false)
 
 -----TAB7----TP
 
-local dropdown = page16.Dropdown({Title = "SELECT-ISLAND",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
+local dropdown = page17.Dropdown({Title = "SELECT-ISLAND",List = {1,2,3,4,5,6},Default = 1,Multi = false,Callback = function(value)
 	print(value)
 end,})
 -- dropdown.Add(value)
 -- dropdown.Clear()
 
-local toggle = page16.Toggle({Title = "TELEPORT",Default = false,Callback = function(value)
+local toggle = page17.Toggle({Title = "TELEPORT",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local Label = page17.Label({Title = "TELEPORT TO SEA3"})
+local Label = page18.Label({Title = "TELEPORT TO SEA3"})
 --Label.SetValue().Text = "Test"
 
-page17.Button({Title = "TELEPORT",Callback = function()
-	print("button")
+page18.Button({Title = "TELEPORT",Callback = function()
+	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
 end,})
 
-local Label = page17.Label({Title = "TELEPORT TO SEA2"})
+local Label = page18.Label({Title = "TELEPORT TO SEA2"})
 --Label.SetValue().Text = "Test"
 
-page17.Button({Title = "TELEPORT",Callback = function()
-	print("button")
+page18.Button({Title = "TELEPORT",Callback = function()
+	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
 end,})
 
-local Label = page17.Label({Title = "TELEPORT TO SEA1"})
+local Label = page18.Label({Title = "TELEPORT TO SEA1"})
 --Label.SetValue().Text = "Test"
 
-page17.Button({Title = "TELEPORT",Callback = function()
-	print("button")
+page18.Button({Title = "TELEPORT",Callback = function()
+	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
 end,})
 
 -----TAB8----other
 
-local toggle = page18.Toggle({Title = "TELEPORT TO FRUITE",Default = false,Callback = function(value)
+local toggle = page19.Toggle({Title = "TELEPORT TO FRUITE",Default = false,Callback = function(value)
     print(value)
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page18.Toggle({Title = "HOP SERVER",Default = false,Callback = function(value)
-    print(value)
+local toggle = page19.Toggle({Title = "HOP SERVER",Default = false,Callback = function(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))()
 end,})
 -- toggle.SetValue(false)
 
-local toggle = page18.Toggle({Title = "REJOIN",Default = false,Callback = function(value)
-    print(value)
+local toggle = page19.Toggle({Title = "REJOIN",Default = false,Callback = function(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))()
 end,})
 -- toggle.SetValue(false)
