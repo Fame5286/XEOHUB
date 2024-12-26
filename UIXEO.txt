@@ -30,7 +30,7 @@ local page15 = tab5.page({Title = "BONE🦴",Side = 2})
 local page16 = tab6.page({Title = "RAIDS🗻",Side = 1})
 local page17 = tab7.page({Title = "TELEPORT🏝️",Side = 1})
 local page18 = tab7.page({Title = "SEA🌊",Side = 2})
-local page19 = tab6.page({Title = "OTHER➕",Side = 1})
+local page19 = tab8.page({Title = "OTHER➕",Side = 1})
 
 
 -----TAB1----SETTING
@@ -527,9 +527,6 @@ page14.Button({Title = "BUY",Callback = function()
 	print("button")
 end,})
 
-local Label = page15.Label({Title = "BONE"})
---Label.SetValue().Text = "Test"
-
 local toggle = page15.Toggle({Title = "RANDOM-BONE",Default = false,Callback = function(value)
 	_G.bone = value
 	while _G.bone do wait (0.2)
@@ -575,7 +572,7 @@ end,})
 
 local toggle = page16.Toggle({Title = "KILL-AURA",Default = false,Callback = function(value)
 	_G.KL = value
-	while _G.KL do wait (.1)
+	while _G.KL do wait ()
 		for i,v in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
 			if v.ClassName == "Model" and v.Humanoid.Health > 0 then
 				v.Humanoid.Health = Die
@@ -629,7 +626,7 @@ end,})
 
 local toggle = page19.Toggle({Title = "HOP SERVER",Default = false,Callback = function(value)
 	_G.Hop = value
-	while _G.Hop do wait (1)
+	while _G.Hop do wait ()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))()
 	end
 end,})
@@ -637,7 +634,7 @@ end,})
 
 local toggle = page19.Toggle({Title = "REJOIN",Default = false,Callback = function(value)
 	_G.Rej = value
-	while _G.Rej do wait (1)
+	while _G.Rej do wait ()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))()
 	end
 end,})
