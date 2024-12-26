@@ -180,53 +180,98 @@ end,})
 
 ----TAB2----STATS
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "MELEE",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
 
 local toggle = page5.Toggle({Title = "UP-MELEE",Default = false,Callback = function(value)
-	print(value)
+	_G.ME = value
+    while _G.ME do wait ()
+        local args = {
+            [1] = "AddPoint",
+            [2] = "Melee",
+            [3] = value
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    end
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "DEFENSE",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
 
 local toggle = page5.Toggle({Title = "UP-DEFENSE",Default = false,Callback = function(value)
-	print(value)
+	_G.DE = value
+    while _G.DE do wait ()
+        local args = {
+            [1] = "AddPoint",
+            [2] = "Defense",
+            [3] = value
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    end
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "SWORD",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
 
 local toggle = page5.Toggle({Title = "UP-SWORD",Default = false,Callback = function(value)
-	print(value)
+    _G.SW = value
+    while _G.SW do wait ()
+	local args = {
+        [1] = "AddPoint",
+        [2] = "Sword",
+        [3] = value
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+   end
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "GUN",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
 
 local toggle = page5.Toggle({Title = "UP-GUN",Default = false,Callback = function(value)
-	print(value)
+	_G.GU = value
+    while _G.GU do wait ()
+        local args = {
+            [1] = "AddPoint",
+            [2] = "Gun",
+            [3] = value
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+    end
 end,})
 -- toggle.SetValue(false)
 
-local Slider = page5.Slider({Title = "Slider",Min = 0,Max = 5000,Default = 100,Callback = function(value)
+local Slider = page5.Slider({Title = "BLOXFRUITE",Min = 0,Max = 5000,Default = 100,Callback = function(value)
 	print(value)
 end,})
 -- Slider.SetValue(20)
 
 local toggle = page5.Toggle({Title = "UP-BLOXFRUITE",Default = false,Callback = function(value)
-	print(value)
+    _G.BF = value
+    while _G.BF do wait ()
+	local args = {
+        [1] = "AddPoint",
+        [2] = "Demon Fruit",
+        [3] = value
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(args))
+end
 end,})
 -- toggle.SetValue(false)
 
@@ -565,8 +610,6 @@ end,})
 
 local toggle = page16.Toggle({Title = "AWAKENING",Default = false,Callback = function(value)
 	print(value)
-	_G.AAA = value
-	print(_G.AAA)
 end,})
 -- toggle.SetValue(false)
 
